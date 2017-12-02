@@ -1,0 +1,217 @@
+/* ============================= 主窗口 ==================================*/
+QWidget#MainWindow,.XItemDialog,.QMessageBox,.XAboutDialog,.XPayDialog {
+   background: #2E3037;
+   border-width:1px;
+   border-style: solid;
+   border-color: #1B89CA;
+   border-radius:0px;
+}
+
+/* =============================== QFrame ================================*/
+.QFrame {
+  border: 2px solid rgba(255,255,255,20);
+  color:  rgba(255,255,255,20);
+}
+
+/* ============================= QLabel ==================================*/
+.QLabel:enabled {
+  color : #46F0F0;
+}
+
+.QLabel:disabled {
+ color : #4D9BA7;
+}
+
+/* ===========================QRadioButton QCheckBox =================================*/
+.QRadioButton:checked,.QCheckBox:checked {
+  color : /*#E9E9E9*/#46F0F0;
+}
+
+.QRadioButton:unchecked,.QCheckBox:unchecked {
+  color : /*#848484*/#E9E9E9;
+}
+
+.QRadioButton:disabled,.QCheckBox:disabled,.QSpinBox:disabled,.QLineEdit:disabled,.QDateTimeEdit:disabled {
+  color : #545454;
+}
+
+/* =========================== QSpinBox QLineEdit QDateTimeEdit =================================*/
+.QSpinBox,.QLineEdit,.QDateTimeEdit {
+  color : #E9E9E9;
+  background: #000000;
+  border: 1px solid #000000;
+}
+
+/* =========================== QGroupBox =================================*/
+.QGroupBox#groupBoxSelectFileAttribute,.QGroupBox#dir_select,.QGroupBox#groupBoxSelectSameFile,.QGroupBox#groupBoxFileAttribute {
+  color : #46F0F0;
+  border: 2px solid #2E3037;/*#FB792C;*/
+  /*border-radius: 5px;*/
+  margin-top: 2ex; /* leave space at the top for the title */
+}
+
+.QGroupBox:checked   {
+  color : #46F0F0;
+  border: 2px solid #2E3037;/*#FB792C;*/
+  /*border-radius: 5px;*/
+  margin-top: 2ex; /* leave space at the top for the title */
+}
+
+.QGroupBox:unchecked   {
+  color : #4D9BA7;
+  border: 2px solid #2E3037;/*#C57B00;*/
+  /*border-radius: 5px;*/
+  margin-top: 2ex; /* leave space at the top for the title */
+}
+
+.QGroupBox::title {
+  subcontrol-origin: margin;
+  /*subcontrol-position: top center;*/ /* position at the top center */
+  padding: 0 3px;
+}
+
+/* ============================= QTabWidget ==================================*/
+.QTabWidget {
+  background: #2E3037;
+}
+
+/* QTabWidget */
+.QTabWidget::pane { /* The tab widget frame */
+     border-top: 2px solid #FB792C;
+     position: absolute;
+     /*top: -0.1em;*/
+ }
+
+.QTabWidget::tab-bar {
+     alignment: center;
+ }
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+.QTabBar::tab {
+     color: #DEE3E6;
+     border: 2px solid #FB792C;
+     border-bottom-color: #FB792C; /* same as the pane color */
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     min-width: 8ex;
+     padding: 2px;
+ }
+
+.QTabBar::tab:selected {
+     background: #FA9B37;
+ }
+
+.QTabBar::tab:hover {
+  background: #F9A73B;
+}
+
+.QTabBar::tab:selected {
+     border-color: #FB792C;
+     border-bottom-color: #FB792C; /* same as pane color */
+ }
+
+/* ============================= QPushButton ==================================*/
+.QPushButton{
+/*.QPushButton{*/
+  border-style: none;
+  border: 0px;
+  color: #F0F0F0;
+  padding: 5px;
+  min-height: 20px;
+  border-radius:5px;
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+.QPushButton:hover{
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #5CACEE, stop:1 #4F94CD);
+}
+
+.QPushButton#pushButton:pressed{
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+.QPushButton:disabled {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #CFCED0, stop:1 #646464);
+}
+
+.QPushButton#pushButtonMenu,.QPushButton#pushButtonClose,.QPushButton#pushButtonMax,.QPushButton#pushButtonMin{
+  border-radius:0px;
+  color: #F0F0F0;
+  background-color:rgba(0,0,0,0);
+  border-style:none;
+}
+
+.QPushButton#pushButtonMenu:hover,QPushButton#pushButtonMin:hover,QPushButton#pushButtonMax:hover{
+  background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(25, 134, 199, 0), stop:1 #5CACEE);
+}
+
+.QPushButton#pushButtonClose:hover{
+  background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(238, 0, 0, 128), stop:1 rgba(238, 44, 44, 255));
+}
+
+/* ============================= QToolTip ==================================*/
+.QToolTip {
+  padding: -2px 4px -2px 4px;
+  background-color: rgb(174, 174, 174);
+  color: black;
+  border: 1px solid rgb(80,80,80);
+  border-radius: 2px;
+  opacity: 255;
+}
+
+/* ============================= QProgressBar ==================================*/
+.QProgressBar {
+  background-color: rgba(255,255,255,20);
+  color: rgb(0,0,0);
+  text-align: center;
+  border: 1px solid rgb(0,0,0,50);
+  border-radius: 2px;
+}
+
+/* ============================= QSlider ==================================*/
+.QSlider::groove:horizontal {
+    border: 1px solid rgba(255,255,255,20);/*#999999;*/
+    height: 8px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+    background: rgba(255,255,255,20);/* qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);*/
+    margin: 2px 0;
+}
+
+.QSlider::handle:horizontal {
+    background: #FB792C;/*qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);*/
+    border: 1px solid #5c5c5c;
+    width: 18px;
+    margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 3px;
+}
+
+/* ========================== QListWidget QTreeView QHeaderView ============================*/
+.QListWidget,.QTreeView,.QHeaderView {
+ font-family: NSimSun;
+ color : #E9E9E9;
+ background: #000000;
+ border: 0px solid #2E2E2E;
+}
+
+.QHeaderView::Section {
+ background: #2E2E2E;
+ border: 1px solid #2E2E2E;
+}
+
+/* 在windows里，要使用下面的样式，才能改选中的项目的背景颜色 */
+.QListWidget::item:selected,.QTableView::item:selected, QListView::item:selected, QTreeView::item:selected {
+  /*color : #E9E9E9;*/
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+.QListWidget::item:hover,.QTableView::item:hover, QListView::item:hover, QTreeView::item:hover {
+  /*color : #E9E9E9;*/
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #5CACEE, stop:1 #4F94CD);
+}
+
+/*
+QTableView::item, QListView::item, QTreeView::item {
+  padding: 5px;
+  margin: 0px;
+}
+*/

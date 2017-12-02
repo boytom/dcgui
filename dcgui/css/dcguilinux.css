@@ -1,0 +1,47 @@
+/* ============================= 主窗口 ==================================*/
+QTreeView#treeViewResult,#treeViewSelectFileAttribute {
+font-family: Consolas;
+}
+
+QPushButton{
+/*.QPushButton{*/
+  border-style: none;
+  border: 0px;
+  color: #F0F0F0;
+  padding: 5px;
+  min-height: 20px;
+  border-radius:5px;
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+QPushButton:hover{
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #5CACEE, stop:1 #4F94CD);
+}
+
+QPushButton#pushButton:pressed{
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+QPushButton:disabled {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #CFCED0, stop:1 #646464);
+}
+
+/* 在linux里，要使用下面的样式，可以改选中的项目的背景颜色 */
+QTreeView,QListView,QTableView{
+  border: 1px solid #5CACEE;
+  selection-background-color: #1B89CA;
+  selection-color: #F0F0F0;
+  border-radius: 0px;
+}
+
+QTableView::item:hover, QListView::item:hover, QTreeView::item:hover {
+  color: #F0F0F0;
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #5CACEE, stop:1 #4F94CD);
+}
+
+/*
+QTableView::item, QListView::item, QTreeView::item {
+  padding: 5px;
+  margin: 0px;
+}
+*/

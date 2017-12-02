@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>css/dcguiwindows.css</file>
+        <file>css/dcguilinux.css</file>
+        <file>font/fontawesome-webfont.ttf</file>
+        <file>logo/logo-dcgui-zh_CN.svg</file>
+        <file>icon/icon-dcgui.svg</file>
+    </qresource>
+</RCC>
